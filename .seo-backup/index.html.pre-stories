@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1939 Big Book Reader &amp; Study App, Offline | Principles Before Personalities</title>
+  <meta name="description" content="Free offline reader for the public-domain 1939 Big Book with meeting page numbers. Highlight, bookmark, take notes and search. Mac, Windows, Android, iPhone.">
+  <meta name="theme-color" content="#0b121c">
+  <meta name="color-scheme" content="dark">
+  <!-- SEO: every absolute URL on this page uses the base https://principles-before-personalities.netlify.app/ . If the site moves, swap it everywhere (command in README.md). -->
+  <meta name="google-site-verification" content="-f_mDHAdWEmJHZSYeyA91Dn1PT6R-1KQY51e3qOawNk">
+  <link rel="canonical" href="https://principles-before-personalities.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Principles Before Personalities">
+  <meta property="og:url" content="https://principles-before-personalities.netlify.app/">
+  <meta property="og:title" content="Principles Before Personalities: an offline 1939 Big Book reader">
+  <meta property="og:description" content="Read and study the public-domain 1939 Big Book offline, with meeting page numbers. Highlight, bookmark, add sticky notes and search, all saved privately on your device.">
+  <meta property="og:image" content="https://principles-before-personalities.netlify.app/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Principles Before Personalities reader on Mac, showing page 89 of the 1939 Big Book">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Principles Before Personalities: an offline 1939 Big Book reader">
+  <meta name="twitter:description" content="Read and study the public-domain 1939 Big Book offline, with meeting page numbers. Highlight, bookmark, add sticky notes and search, all saved privately on your device.">
+  <meta name="twitter:image" content="https://principles-before-personalities.netlify.app/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="The Principles Before Personalities reader on Mac, showing page 89 of the 1939 Big Book">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://principles-before-personalities.netlify.app/#website",
+      "url": "https://principles-before-personalities.netlify.app/",
+      "name": "Principles Before Personalities",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://principles-before-personalities.netlify.app/#app",
+      "name": "Principles Before Personalities",
+      "description": "An offline reader and study app for the public-domain 1939 first edition of Alcoholics Anonymous (the Big Book) and its 30 personal stories, with meeting page numbers, highlighting, bookmarks, sticky notes and full-text search. Not affiliated with or endorsed by Alcoholics Anonymous World Services, Inc.",
+      "applicationCategory": "ReferenceApplication",
+      "operatingSystem": "macOS 14 or later, Windows 10, Windows 11, Android, iOS (installable web app)",
+      "url": "https://principles-before-personalities.netlify.app/",
+      "image": "https://principles-before-personalities.netlify.app/assets/icon-512.png",
+      "screenshot": "https://principles-before-personalities.netlify.app/assets/screenshot-reader-1200.jpg",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Real Big Book page numbers with jump-to-page",
+        "Five-color highlighter with eraser",
+        "Page bookmarks (marked pages)",
+        "Sticky notes on any page",
+        "Full-text search",
+        "Import your own .txt or .md texts",
+        "Works offline with no account; data stays on the device"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "James Murphy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://principles-before-personalities.netlify.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this the current edition of the Big Book?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The app contains the 1939 first edition, which is in the public domain in the United States. It is not the current fourth edition, and stories added in later editions are not included."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this an official Alcoholics Anonymous app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Principles Before Personalities is an independent project. It is not affiliated with or endorsed by Alcoholics Anonymous World Services, Inc."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Principles Before Personalities free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. There is no price, no account and no subscription. Choose your platform in the Download section of this page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do the page numbers match the Big Book read in meetings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app keeps the page numbers read in meetings: Bill's Story begins on page 1, How It Works on page 58, and the basic text runs through page 164. Type a page number to jump straight to that page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it to study the book with my sponsor or home group?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can use it the way you would use a paper copy: highlight passages, mark pages and leave sticky notes as you read, then bring what you marked to a meeting or to time with your sponsor. Your notes stay on your own device. The app has no sharing or group features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline? Where are my highlights and notes stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It works fully offline. The app has no account and doesn't need a network connection. Your highlights, bookmarks, notes and reading place are saved only on your own device, and nothing you read or write is uploaded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it include Twelve Steps and Twelve Traditions or the later-edition stories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The app includes only the two 1939 first-edition texts described on this page: the basic text and the 30 personal stories. You can add your own .txt or .md files with Import a text."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which devices does it run on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mac (macOS 14 Sonoma or later), Windows 10 and Windows 11, Android (an installable .apk), and iPhone (an installable web app that you add to your Home Screen from Safari)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the iPhone version a web app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Publishing a native app on the App Store requires Apple's paid Developer Program, so the iPhone version is an installable web app that you add to your Home Screen from Safari. It is not a native App Store app."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Principles Before Personalities, back to top">
+        <img src="assets/icon-64.png" width="28" height="28" alt="">
+        <span>Principles Before Personalities</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#inside">What's inside</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="nav-cta" href="#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Offline Big Book reader &amp; study companion</p>
+          <h1 id="hero-title">Principles Before Personalities <span class="h1-sub">A reader for the 1939 Big Book, made for working the book</span></h1>
+          <p class="lede">A quiet, distraction-free reader for the <strong>public-domain 1939 first edition</strong> of <cite>Alcoholics Anonymous</cite>, with the page numbers read in meetings. Highlight, bookmark, leave sticky notes and search, all kept privately on your own device.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#download">Download</a>
+            <a class="btn btn-ghost" href="#features">See what it does</a>
+          </div>
+          <ul class="chips" aria-label="At a glance">
+            <li>No account</li>
+            <li>Works offline</li>
+            <li>Mac · Windows · Android · iPhone</li>
+          </ul>
+          <p class="hero-note">Independent project. Not affiliated with or endorsed by Alcoholics Anonymous World Services, Inc.</p>
+        </div>
+        <div class="hero-art">
+          <picture>
+            <source srcset="assets/icon-320.webp" type="image/webp">
+            <img src="assets/icon-320.png" width="320" height="320" alt="Principles Before Personalities app icon: a navy book with a glowing cyan bookmark ribbon">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="shot" aria-label="Screenshot">
+      <div class="wrap">
+        <figure>
+          <picture>
+            <source type="image/webp" srcset="assets/screenshot-reader-800.webp 800w, assets/screenshot-reader-1200.webp 1200w, assets/screenshot-reader-2000.webp 2000w" sizes="(min-width: 1180px) 1100px, 94vw">
+            <img src="assets/screenshot-reader-1200.jpg" srcset="assets/screenshot-reader-800.jpg 800w, assets/screenshot-reader-1200.jpg 1200w, assets/screenshot-reader-2000.jpg 2000w" sizes="(min-width: 1180px) 1100px, 94vw" width="1200" height="713" alt="Screenshot of the Mac app. A library sidebar lists the chapters of Alcoholics Anonymous with their page numbers. The reading sheet shows Chapter 7, Working With Others, on page 89, with a highlighter color tray, bookmark and sticky-note buttons and a find-in-book field in the toolbar, and page navigation at the bottom." decoding="async" fetchpriority="high">
+          </picture>
+          <figcaption>The Mac app, open at Chapter 7, “Working With Others,” page 89. Actual screenshot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap narrow">
+        <h2 id="about-title">An offline Big Book reader for people in recovery</h2>
+        <p>Principles Before Personalities is a reader built for people who actually <em>work</em> the book. You get the 1939 text with its real page numbers, laid out as a warm paper page on a calm dark background, plus the tools you would use with a pen and a pad of sticky notes. Your highlights, bookmarks, notes and place are saved on your device. There is no account and nothing is uploaded.</p>
+        <p>It suits the way many people in 12-step recovery already read: on your own, with a sponsor, or before a Big Book study meeting at your home group. The name comes from the recovery tradition of placing “principles before personalities.”</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <h2 id="features-title">Features for Big Book study</h2>
+        <ul class="grid features">
+          <li class="card">
+            <h3>Two-pane reader</h3>
+            <p>A library sidebar with collapsible books, parts and chapters sits beside a paper-style reading sheet.</p>
+          </li>
+          <li class="card">
+            <h3>Real page numbers</h3>
+            <p>The text is split into the book's real pages. Type a page number to jump straight to it. <i>Bill's Story</i> starts on page 1 and <i>How It Works</i> on page 58.</p>
+          </li>
+          <li class="card">
+            <h3>Five-color highlighter</h3>
+            <p>Select text and paint it in <span class="sw sw-yellow"></span>yellow, <span class="sw sw-amber"></span>amber, <span class="sw sw-pink"></span>pink, <span class="sw sw-green"></span>green or <span class="sw sw-blue"></span>blue. Overlapping highlights merge and split cleanly, and an eraser removes them.</p>
+          </li>
+          <li class="card">
+            <h3>Marked pages</h3>
+            <p>Flag any page with a colored ribbon. A “Marked pages” list in the sidebar takes you back to each one.</p>
+          </li>
+          <li class="card">
+            <h3>Sticky notes</h3>
+            <p>Drop a note on any page, then drag it, resize it and pick one of five colors. Chapters that contain notes show a small indicator in the sidebar.</p>
+          </li>
+          <li class="card">
+            <h3>Full-text search</h3>
+            <p>Search the whole book, see the number of hits, step to the next or previous match, and find the current match marked on the page.</p>
+          </li>
+          <li class="card">
+            <h3>Easy navigation</h3>
+            <p>Move by page or by chapter, and filter the chapter list by name to find a chapter quickly.</p>
+          </li>
+          <li class="card">
+            <h3>Import your own text</h3>
+            <p>Open any <code>.txt</code> or <code>.md</code> file. It is split into chapters and pages automatically and added to your library, ready to highlight and annotate.</p>
+          </li>
+          <li class="card">
+            <h3>Private and offline</h3>
+            <p>No account, no network and no telemetry. Your place, highlights, bookmarks, notes and imported texts are saved automatically on your device and come back the next time you open the app.</p>
+          </li>
+        </ul>
+
+        <div class="shortcuts">
+          <h3>Keyboard shortcuts on Mac</h3>
+          <dl>
+            <div><dt><kbd>⌘</kbd> <kbd>←</kbd> / <kbd>⌘</kbd> <kbd>→</kbd></dt><dd>Previous / next page</dd></div>
+            <div><dt><kbd>⌘</kbd> <kbd>M</kbd></dt><dd>Mark this page</dd></div>
+            <div><dt><kbd>⌘</kbd> <kbd>G</kbd></dt><dd>Find next</dd></div>
+            <div><dt><kbd>⌘</kbd> <kbd>O</kbd></dt><dd>Import a text</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="inside" aria-labelledby="inside-title">
+      <div class="wrap">
+        <h2 id="inside-title">What's inside: the 1939 Big Book and 30 personal stories</h2>
+        <p class="section-lede">The app comes with two texts. Both are from the <strong>1939 first edition</strong>, which is in the public domain in the United States. This is <strong>not</strong> the current fourth edition, and stories added in later editions are not included. <a href="big-book-chapters/">See every chapter with its page numbers</a>.</p>
+        <div class="grid two">
+          <article class="card paper">
+            <h3><cite>Alcoholics Anonymous</cite></h3>
+            <p class="sub">The basic text</p>
+            <p>The Big Book as read in meetings, with meeting page numbers kept, from <i>Bill's Story</i> on page 1 through page 164.</p>
+            <ul class="ticks">
+              <li><strong>Front matter:</strong> the 1939 Foreword and The Doctor's Opinion</li>
+              <li><strong>The Book:</strong> Bill's Story, There Is a Solution, More About Alcoholism, We Agnostics, How It Works, Into Action, Working With Others, To Wives, The Family Afterward, To Employers, A Vision for You</li>
+              <li><strong>Appendix:</strong> Spiritual Experience</li>
+            </ul>
+          </article>
+          <article class="card paper">
+            <h3>Personal Stories</h3>
+            <p class="sub">First edition, 1939</p>
+            <p>All 30 personal stories from the 1939 first edition, including The Doctor's Nightmare, The Unbeliever, The European Drinker, A Feminine Victory, Our Southern Friend and A Business Man's Recovery.</p>
+            <p>You can add your own texts alongside them with <em>Import a text</em>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="download" aria-labelledby="download-title">
+      <div class="wrap">
+        <h2 id="download-title">Download for Mac, Windows, Android or iPhone</h2>
+        <p class="section-lede">Choose your platform. The Mac, Windows and Android versions are <code>.zip</code> downloads, and the iPhone version is a web app you open in Safari. None of them come from an app store, so your device may ask you to confirm the first time. The steps for each platform are below.</p>
+        <div class="grid downloads">
+          <article class="card dl" aria-labelledby="dl-mac">
+            <h3 id="dl-mac">Mac</h3>
+            <p class="req">Native app · macOS 14 Sonoma or later</p>
+            <a class="btn btn-primary" href="downloads/Principles-Before-Personalities-Mac.zip" download>Download for Mac</a>
+            <ol>
+              <li>Double-click the zip to unzip it (Safari may already have done this), then drag <b>Principles Before Personalities</b> into your Applications folder.</li>
+              <li>The first time, Control-click (or right-click) the app, choose <b>Open</b>, then click <b>Open</b> again.</li>
+              <li>If macOS still blocks it, go to <b>System Settings › Privacy &amp; Security</b> and click <b>Open Anyway</b>.</li>
+            </ol>
+          </article>
+          <article class="card dl" aria-labelledby="dl-win">
+            <h3 id="dl-win">Windows</h3>
+            <p class="req">Desktop app · Windows 10 or Windows 11 (64-bit) · nothing else to install</p>
+            <a class="btn btn-primary" href="downloads/Principles-Before-Personalities-Windows.zip" download>Download for Windows</a>
+            <ol>
+              <li>Right-click the zip, choose <b>Extract All</b>, and open the extracted <b>Principles Before Personalities</b> folder.</li>
+              <li>Double-click <b>Principles Before Personalities.exe</b>. Keep the files in that folder together.</li>
+              <li>If Microsoft Defender SmartScreen appears, click <b>More info</b>, then <b>Run anyway</b>.</li>
+            </ol>
+          </article>
+          <article class="card dl" aria-labelledby="dl-android">
+            <h3 id="dl-android">Android</h3>
+            <p class="req">Android app (<code>.apk</code>) · Android 7.0 or newer · sideloaded, not from Google Play</p>
+            <a class="btn btn-primary" href="downloads/Principles-Before-Personalities-Android.zip" download>Download for Android</a>
+            <ol>
+              <li>Download the zip on your phone, open it in the Files app, and extract <b>Principles Before Personalities.apk</b>.</li>
+              <li>Tap the <code>.apk</code>. When Android asks, tap <b>Settings</b>, turn on <b>Allow from this source</b> (the <b>Install unknown apps</b> setting), then go back.</li>
+              <li>Tap <b>Install</b>. If Google Play Protect warns about an unknown developer, tap <b>More details › Install anyway</b>. You can turn <b>Install unknown apps</b> back off afterwards.</li>
+            </ol>
+          </article>
+          <article class="card dl" aria-labelledby="dl-iphone">
+            <h3 id="dl-iphone">iPhone</h3>
+            <p class="req">Web app for iPhone · <strong>not</strong> an App Store or native app</p>
+            <a class="btn btn-primary" href="iphone/">Open the web app</a>
+            <ol>
+              <li>On your iPhone, open the web app in <b>Safari</b>.</li>
+              <li>Tap <b>Share</b>, then <b>Add to Home Screen</b>, then <b>Add</b>.</li>
+              <li>Open it from its Home Screen icon. After the first visit it works offline, with the same books and reading tools.</li>
+            </ol>
+            <p>It also runs in any modern web browser. Prefer to host it yourself? <a href="downloads/Principles-Before-Personalities-iPhone.zip" download>Download .zip</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <details>
+          <summary>Is this the current edition of the Big Book?</summary>
+          <p>No. The app contains the 1939 first edition, which is in the public domain in the United States. It is not the current fourth edition, and stories added in later editions are not included.</p>
+        </details>
+        <details>
+          <summary>Is this an official Alcoholics Anonymous app?</summary>
+          <p>No. Principles Before Personalities is an independent project. It is not affiliated with or endorsed by Alcoholics Anonymous World Services, Inc.</p>
+        </details>
+        <details>
+          <summary>Is Principles Before Personalities free?</summary>
+          <p>Yes. There is no price, no account and no subscription. Choose your platform in the Download section of this page.</p>
+        </details>
+        <details>
+          <summary>Do the page numbers match the Big Book read in meetings?</summary>
+          <p>The app keeps the page numbers read in meetings: Bill's Story begins on page 1, How It Works on page 58, and the basic text runs through page 164. Type a page number to jump straight to that page.</p>
+        </details>
+        <details>
+          <summary>Can I use it to study the book with my sponsor or home group?</summary>
+          <p>You can use it the way you would use a paper copy: highlight passages, mark pages and leave sticky notes as you read, then bring what you marked to a meeting or to time with your sponsor. Your notes stay on your own device. The app has no sharing or group features.</p>
+        </details>
+        <details>
+          <summary>Does it work offline? Where are my highlights and notes stored?</summary>
+          <p>It works fully offline. The app has no account and doesn't need a network connection. Your highlights, bookmarks, notes and reading place are saved only on your own device, and nothing you read or write is uploaded.</p>
+        </details>
+        <details>
+          <summary>Does it include Twelve Steps and Twelve Traditions or the later-edition stories?</summary>
+          <p>No. The app includes only the two 1939 first-edition texts described on this page: the basic text and the 30 personal stories. You can add your own .txt or .md files with Import a text.</p>
+        </details>
+        <details>
+          <summary>Which devices does it run on?</summary>
+          <p>Mac (macOS 14 Sonoma or later), Windows 10 and Windows 11, Android (an installable .apk), and iPhone (an installable web app that you add to your Home Screen from Safari).</p>
+        </details>
+        <details>
+          <summary>Why is the iPhone version a web app?</summary>
+          <p>Publishing a native app on the App Store requires Apple's paid Developer Program, so the iPhone version is an installable web app that you add to your Home Screen from Safari. It is not a native App Store app.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="disclaimer">Principles Before Personalities is an independent project. It is not affiliated with, endorsed by, or approved by Alcoholics Anonymous World Services, Inc. The bundled text is the 1939 first edition of <cite>Alcoholics Anonymous</cite>, which is in the public domain in the United States.</p>
+      <p class="fine">© 2026 James Murphy · This site uses no cookies, trackers or third-party scripts.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+ ["That base URL is used in three files:\n", "That base URL is used in these files:\n"],
+ ["- `robots.txt`: the `Sitemap:` line\n", "- `iphone/index.html` and `big-book-chapters/index.html`: canonical, `og:url`, `og:image`, `twitter:image` (and the breadcrumb JSON-LD on the chapter page)\n- `robots.txt`: the `Sitemap:` line\n"],
+ ["grep -rl \"$OLD\" index.html robots.txt sitemap.xml | xargs", "grep -rl \"$OLD\" index.html iphone/index.html big-book-chapters/index.html robots.txt sitemap.xml | xargs"]
+]
