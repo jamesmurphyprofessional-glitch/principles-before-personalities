@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Principles Before Personalities</title>
+<meta name="description" content="Offline reader and study companion for the public-domain 1939 first edition of Alcoholics Anonymous and its personal stories.">
+<meta name="theme-color" content="#0b121c">
+<meta name="color-scheme" content="dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Principles">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <aside id="sidebar" class="sidebar" aria-label="Library">
+    <div class="side-head">
+      <div class="side-title-row">
+        <span class="side-title">Library</span>
+        <button id="closeSidebar" class="icon-btn only-mobile" aria-label="Close library">&#x2715;</button>
+      </div>
+      <label class="filter">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M4.5 8h7M7 12h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+        <input id="chapterFilter" type="search" placeholder="Find a chapter" autocomplete="off" spellcheck="false">
+      </label>
+    </div>
+    <nav id="libraryList" class="library-list"></nav>
+    <div class="side-foot">
+      <button id="importBtn" class="import-btn" type="button"><span aria-hidden="true">+</span> Import a text</button>
+      <input id="importFile" type="file" accept=".txt,.md,.markdown,text/plain,text/markdown" hidden>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </div>
+  </aside>
+  <div id="scrim" class="scrim" hidden></div>
+
+  <main class="reader">
+    <header class="toolbar">
+      <div class="tb-row tb-main">
+        <button id="openSidebar" class="icon-btn only-mobile" aria-label="Open library">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="titles">
+          <div id="chapterTitle" class="chapter-title">Principles Before Personalities</div>
+          <div id="whereLine" class="where-line"></div>
+        </div>
+        <div class="tb-actions">
+          <button id="markBtn" class="round-btn" title="Mark this page (Ctrl/⌘ M)" aria-label="Mark this page">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path id="markIcon" d="M5.5 2.8h9v14.4L10 13.6l-4.5 3.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/></svg>
+          </button>
+          <button id="noteBtn" class="round-btn" title="Add a sticky note to this page" aria-label="Add a sticky note">
+            <span class="sticky-icon" aria-hidden="true"></span>
+          </button>
+          <button id="searchToggle" class="round-btn only-mobile" aria-label="Find in book">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M12.3 12.3 17 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="tb-row tb-tools">
+        <div id="penTray" class="pen-tray" role="group" aria-label="Highlighter colors"></div>
+        <div class="tool-capsule" role="group" aria-label="Tools">
+          <button class="tool-btn" data-tool="select" title="Select text, then pick a color" aria-label="Select tool">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3h6M7 17h6M10 3v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <button class="tool-btn" data-tool="marker" title="Marker: paint the selection with the current color" aria-label="Marker tool">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12.5 3.5 4 4-7.5 7.5H5v-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M3 18h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <button class="tool-btn" data-tool="eraser" title="Eraser: remove highlights from the selection" aria-label="Eraser tool">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 16 -4.5-4.5 7.5-7.5 6 6-6 6z M6 9.5l5.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" fill="none"/><path d="M10 17h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div id="searchBox" class="search-box">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5" stroke="currentColor" stroke-width="1.7" fill="none"/><path d="M12.3 12.3 17 17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <input id="searchInput" type="search" placeholder="Find in book" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          <span id="searchCount" class="search-count"></span>
+          <button id="searchPrev" class="mini-btn" aria-label="Previous match">&#x2303;</button>
+          <button id="searchNext" class="mini-btn flip" aria-label="Next match">&#x2303;</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="well" class="well">
+      <div id="sheetWrap" class="sheet-wrap">
+        <article id="sheet" class="sheet">
+          <div id="ribbon" class="ribbon" hidden></div>
+          <div id="pageText" class="page-text"></div>
+          <div id="pageFoot" class="page-foot"></div>
+          <div id="noteLayer" class="note-layer"></div>
+        </article>
+      </div>
+    </section>
+
+    <div id="selBar" class="sel-bar" hidden>
+      <span class="sel-label">Highlight</span>
+      <div id="selPens" class="sel-pens"></div>
+      <button id="selErase" class="mini-btn wide" aria-label="Erase highlight">Erase</button>
+    </div>
+
+    <footer class="navbar">
+      <button id="prevChapter" class="chapter-jump left"></button>
+      <div class="page-nav">
+        <button id="prevPage" class="icon-btn" aria-label="Previous page">&#x2039;</button>
+        <label class="page-jump"><span>Page</span>
+          <input id="pageJump" type="text" inputmode="numeric" autocomplete="off" aria-label="Jump to page">
+        </label>
+        <button id="nextPage" class="icon-btn" aria-label="Next page">&#x203A;</button>
+      </div>
+      <button id="nextChapter" class="chapter-jump right"></button>
+    </footer>
+  </main>
+</div>
+<noscript><p style="color:#fff;padding:2em">This reader needs JavaScript enabled.</p></noscript>
+<script src="library-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

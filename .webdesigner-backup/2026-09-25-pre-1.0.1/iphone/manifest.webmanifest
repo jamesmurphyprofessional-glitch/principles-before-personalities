@@ -1,0 +1,20 @@
+{
+  "name": "Principles Before Personalities",
+  "short_name": "Principles",
+  "description": "Offline reader and study companion for the public-domain 1939 first edition of Alcoholics Anonymous and its personal stories.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b121c",
+  "theme_color": "#0b121c",
+  "lang": "en",
+  "categories": ["books", "education", "health"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
