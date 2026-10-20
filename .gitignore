@@ -44,3 +44,11 @@ packaging/stage/
 __pycache__/
 *.pyc
 .netlify/
+
+# Outreach prospect lists contain third-party contact data; keep local only
+release/outreach/**/*.csv
+release/outreach/**/*.json
+
+# Local backup/scratch copies, never commit
+.webdesigner-backup/
+*.bak-*
