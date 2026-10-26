@@ -1,8 +1,0 @@
-[
- ["srcset=\"assets/screenshot-reader-1200.webp 1200w, assets/screenshot-reader-2000.webp 2000w\"",
-  "srcset=\"assets/screenshot-reader-800.webp 800w, assets/screenshot-reader-1200.webp 1200w, assets/screenshot-reader-2000.webp 2000w\""],
- ["srcset=\"assets/screenshot-reader-1200.jpg 1200w, assets/screenshot-reader-2000.jpg 2000w\"",
-  "srcset=\"assets/screenshot-reader-800.jpg 800w, assets/screenshot-reader-1200.jpg 1200w, assets/screenshot-reader-2000.jpg 2000w\""],
- ["This is <strong>not</strong> the current fourth edition, and stories added in later editions are not included.</p>",
-  "This is <strong>not</strong> the current fourth edition, and stories added in later editions are not included. <a href=\"big-book-chapters/\">See every chapter with its page numbers</a>.</p>"]
-]
