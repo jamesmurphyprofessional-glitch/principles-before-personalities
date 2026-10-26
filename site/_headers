@@ -1,7 +1,6 @@
-# Security headers (Netlify _headers). Mirrors aegis-scribe's header set.
-# HSTS is already sent by Netlify for *.netlify.app.
+# Cloudflare Pages security headers (mirrors Aegis Scribe live set). Deploy dir: site/
 /*
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' https://static.cloudflareinsights.com; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; connect-src 'self' https://cloudflareinsights.com
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin

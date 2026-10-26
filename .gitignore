@@ -52,3 +52,5 @@ release/outreach/**/*.json
 # Local backup/scratch copies, never commit
 .webdesigner-backup/
 *.bak-*
+
+.seo-backup/
